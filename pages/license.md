@@ -17,7 +17,7 @@ We have copied and adapted most of their
 ## Instructional Material
 
 All CodeRefinery instructional material is made available under the
-[Creative Commons Attribution license](https://creativecommons.org/licenses/by-sa/4.0/).
+[Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/4.0/).
 The following is a human-readable summary of (and not a substitute for)
 the [full legal text of the CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
 
