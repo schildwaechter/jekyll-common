@@ -1,7 +1,7 @@
-{% assign hours = current | divided_by: 60 %}
-{% assign minutes = current | modulo: 60 %}
 <tr>
-    <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
+    <td class="col-md-1">
+        {{ episode.teaching | plus: episode.exercises | plus: episode.break }} min
+    </td>
     <td class="col-md-3">
         <a href="{{ site.baseurl }}{{ episode.url }}">{{ episode.title }}</a>
     </td>
@@ -20,4 +20,3 @@
         {% endif %}
     </td>
 </tr>
-{% assign current = current | plus: episode.teaching | plus: episode.exercises | plus: episode.break %}

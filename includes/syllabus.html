@@ -1,33 +1,7 @@
-{% assign current = site.start_time %}
-
 <h2>Schedule</h2>
 
 <table class="table table-striped">
     {% for episode in site.episodes %}
         {% include syllabus_table.html %}
     {% endfor %}
-    {% assign hours = current | divided_by: 60 %}
-    {% assign minutes = current | modulo: 60 %}
-    <tr>
-        <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-        <td class="col-md-3">Finish</td>
-        <td class="col-md-7"></td>
-    </tr>
 </table>
-
-{% if site.bonus %}
-    <h2>Bonus material</h2>
-
-    <table class="table table-striped">
-        {% for episode in site.bonus %}
-            {% include syllabus_table.html %}
-        {% endfor %}
-        {% assign hours = current | divided_by: 60 %}
-        {% assign minutes = current | modulo: 60 %}
-        <tr>
-            <td class="col-md-1">{% if hours < 10 %}0{% endif %}{{ hours }}:{% if minutes < 10 %}0{% endif %}{{ minutes }}</td>
-            <td class="col-md-3">Finish</td>
-            <td class="col-md-7"></td>
-        </tr>
-    </table>
-{% endif %}
