@@ -6,20 +6,20 @@ permalink: /license/
 ## Credit
 
 The lesson Jekyll file structure and browsing layout is inspired by and derived from
-work by [Software Carpentry](http://software-carpentry.org) licensed under the
-[Creative Commons Attribution license (CC BY4.0)](https://creativecommons.org/licenses/by/4.0/).
+work by [Software Carpentry](https://software-carpentry.org) licensed under the
+[Creative Commons Attribution license (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 We have kept the YAML structure in the episode Markdown files for future compatibility
 but have heavily cut down and modified the layout and include files.
 We have copied and adapted most of their
-[license text](http://software-carpentry.org/license/).
+[license text](https://software-carpentry.org/license/).
 
 
 ## Instructional Material
 
 All CodeRefinery instructional material is made available under the
-[Creative Commons Attribution-ShareAlike license](https://creativecommons.org/licenses/by-sa/4.0/).
+[Creative Commons Attribution license (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 The following is a human-readable summary of (and not a substitute for)
-the [full legal text of the CC BY-SA 4.0 license](https://creativecommons.org/licenses/by-sa/4.0/legalcode).
+the [full legal text of the CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode).
 
 You are free:
 
@@ -31,13 +31,11 @@ for any purpose, even commercially. The licensor cannot revoke these freedoms as
 - **Attribution** - You must give appropriate credit
   (mentioning that your work is derived from work that is Copyright
   (c) CodeRefinery and, where practical, linking to
-  http://coderefinery.org), provide
-  a [link to the license](https://creativecommons.org/licenses/by-sa/4.0/),
+  https://coderefinery.org), provide
+  a [link to the license](https://creativecommons.org/licenses/by/4.0/),
   and indicate if changes were made. You may do so in any
   reasonable manner, but not in any way that suggests the licensor
   endorses you or your use.
-- **ShareAlike** - If you remix, transform, or build upon the material, you
-  must distribute your contributions under the same license as the original.
 
 **No additional restrictions** - You may not apply legal terms or technological
 measures that legally restrict others from doing anything the license permits.
