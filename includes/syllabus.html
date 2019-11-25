@@ -1,7 +1,8 @@
 <h2>Schedule</h2>
 
 <table class="table table-striped">
-    {% for episode in site.episodes %}
+    {% assign episodes_array = site.episodes | where: "lesson", page.lesson %}
+    {% for episode in episodes_array %}
         {% include syllabus_table.html %}
     {% endfor %}
 </table>
