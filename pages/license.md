@@ -5,6 +5,11 @@ permalink: /license/
 
 ## Credit
 
+This material is provided by [{{ site.author.name }}]({{ site.author.link }}) under the licenses stated below.
+
+### Website template
+
+The website template is maintained by [CodeRefinery](https://coderefinery.org/) and rendered with [Jekyll](https://jekyllrb.com).
 The lesson Jekyll file structure and browsing layout is inspired by and derived from
 work by [Software Carpentry](https://software-carpentry.org) licensed under the
 [Creative Commons Attribution license (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
@@ -14,9 +19,11 @@ We have copied and adapted most of their
 [license text](https://software-carpentry.org/license/).
 
 
-## Instructional Material
+## License
 
-All CodeRefinery instructional material is made available under the
+### Instructional Material
+
+All {{ site.author.name }} instructional material is made available under the
 [Creative Commons Attribution license (CC-BY-4.0)](https://creativecommons.org/licenses/by/4.0/).
 The following is a human-readable summary of (and not a substitute for)
 the [full legal text of the CC-BY-4.0 license](https://creativecommons.org/licenses/by/4.0/legalcode).
@@ -50,12 +57,30 @@ With the understanding that:
   you use the material.
 
 
-## Software
+### Software
 
+{% if site.license.code == 'Apache-2.0' -%}
 Except where otherwise noted, the example programs and other software provided
-by CodeRefinery are made available under the
-[OSI](http://opensource.org)-approved [MIT
-license](http://opensource.org/licenses/mit-license.html):
+by {{ site.author.name }} are made available under the
+[OSI](http://opensource.org)-approved
+[Apache 2.0 license](https://opensource.org/licenses/Apache-2.0):
+
+Licensed under the Apache License, Version 2.0 (the "License");
+you may not use this file except in compliance with the License.
+You may obtain a copy of the License at
+
+  http://www.apache.org/licenses/LICENSE-2.0
+
+Unless required by applicable law or agreed to in writing, software
+distributed under the License is distributed on an "AS IS" BASIS,
+WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+See the License for the specific language governing permissions and
+limitations under the License.
+{% elsif site.license.code == 'MIT' -%}
+Except where otherwise noted, the example programs and other software provided
+by {{ site.author.name }} are made available under the
+[OSI](http://opensource.org)-approved
+[MIT license](http://opensource.org/licenses/mit-license.html):
 
 Permission is hereby granted, free of charge, to any person
 obtaining a copy of this software and associated documentation
@@ -77,3 +102,6 @@ HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY,
 WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER
 DEALINGS IN THE SOFTWARE.
+{% else -%}
+Please refer to the authors for license information!
+{% endif -%}
