@@ -28,3 +28,17 @@ license:
   code: 'MIT'
 ```
 
+## Lessons and Episodes
+
+Put your lessons and episodes in the two respective Jekyll Collections, defined by
+```yaml
+collections:
+  episodes:
+    output: true
+  lessons:
+    output: true
+```
+
+Make sure both the lessons and episodes have a `lesson: lesson-name` metadata entry to be matched with one another.
+
+

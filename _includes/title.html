@@ -9,7 +9,8 @@
         </h3>
     </div>
     <div class="col-xs-10">
-        <h3><a href="{{ site.baseurl }}/">{{ site.title }}</a>{% if page.title %}: {{ page.title }}{% endif %}</h3>
+      {% assign the_lesson = site.lessons | where_exp:"select", "select.lesson == page.lesson" | first %}
+        <h3><a href="{{ the_lesson.url }}">{{ the_lesson.title }}</a>{% if page.title %}: {{ page.title }}{% endif %}</h3>
     </div>
     <div class="col-xs-1">
         <h3 class="text-right">
